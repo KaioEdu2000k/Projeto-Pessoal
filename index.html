@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KO SÉRIES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpdmOHSUnXTr9q4uCS4ASnxLAeT+kkU7eYm6k80W1UtAFoXFjRfD8mE+N/0NOfFXlR9If7ltn+RO+H/jZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="serie.html">
+    <link rel="stylesheet" href="explorer.html">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="LOGO KO S.png" alt="Logo" style=>
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="explorer.html">Explorar Séries</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mais
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Suporte</a></li>
+                                <li><a class="dropdown-item" href="#">Licença e Privacidade</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Séries Removidas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="search-btn  d-lg-block" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary d-lg-none" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carousel-container">
+        <h1 class="titulo-com-linha">Séries Recomendadas</h1>
+        <div class="linha"></div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="sobrenatural.jpg" class="d-block w-100" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="bold">Supernatural</h2>
+                        <p class="bold">Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros. Velhos truques, armas e esconderijos não funcionam mais e seus amigos os traem, forçando os irmãos a contar um com o outro enquanto enfrentam novos inimigos.</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="prison.jpg" class="d-block w-100" alt="Imagem 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h3 class="bold">Prison Break</h3>
+                    <p class="bold">A história gira em torno de Lincoln Burrows, um homem que foi sentenciado à morte por supostamente ter assassinado o irmão da vice-presidente dos EUA, e seu irmão, Michael Scofield, um engenheiro civil, que cria um plano para resgatá-lo da prisão antes que seja executado.</p>
+                </div>
+                
+            </div>
+                <div class="carousel-item">
+                    <img src="sand.jpg" class="d-block w-100" alt="Imagem 3">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h4 class="bold">Sandman</h4>
+                    <p class="bold">Após anos aprisionado, Morpheus, o Rei dos Sonhos, embarca em uma jornada entre mundos para recuperar o que lhe foi roubado e restaurar seu poder.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="youtwo.jpg" class="d-block w-100 move-left" alt="Imagem 4">
+                    <div class="carousel-caption custom-caption">
+                    <h5>You</h5>
+                    <p>Obsessivo e mortalmente charmoso, Joe vai ao extremo para entrar na vida de quem o fascina. Por trás de seus modos gentis, há uma fúria assassina e um passado perturbador.</p>
+                </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="section-divider"></div>
+    </div>
+    
+
+    <div class="titulos-recentes">
+        <h1 class="titulo-com-linha">Séries Recentes</h1>
+        <div class="linha linha-titulo"></div>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="61ab98_bfafa15469924fb4843eea87c3f4b27d~mv2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Round 6</h5>
+                    <p class="card-text">Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="superman-lois-capa.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Superman e Lois</h5>
+                    <p class="card-text">Clark Kent, o Superman, maior herói do mundo, e sua companheira Lois Lane, uma famosa jornalista, se esforçam para lidar com o estresse e as complexidades cotidianas de serem pais que trabalham na sociedade contemporânea.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+                <img src="The-Last-of-Us-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Last of Us</h5>
+                    <p class="card-text">Joel, um sobrevivente duro e cínico, e a jovem e impetuosa Ellie se conectam pela dificuldade do mundo em que vivem. Juntos, eles enfrentam circunstâncias brutais e monstros impiedosos durante uma difícil jornada pelos EUA após um surto apocalíptico.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="Bleach_-Rebirth-of-Souls.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bleach</h5>
+                    <p class="card-text">Ichigo Kurosaki vê fantasmas basicamente desde sempre. Mas sua vida muda em definitivo ao conhecer Rukia, uma Ceifeira de Almas que combate espíritos do mal conhecidos como Hollows, porque ela transfere a maioria de seus poderes para ele.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="hunter-x-hunter-pictures-rgspzm88tzgl3wea.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hunter x Hunter</h5>
+                    <p class="card-text">Hunter x Hunter acompanha a saga de Gon Freecss, um jovem de 12 anos em busca do paradeiro de seu pai. O rapaz decide se tornar um Hunter e, ao longo de sua aventura, une-se a Killua Zoldyck, Leorio Paradinight e Kurapika.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="1545c1c1c89d476d35029056ddb248ebb9523acf7488250d0370e8a8fa5e40ad.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Vampire Diaries </h5>
+                    <p class="card-text">The Vampire Diaries conta sobre a vida de uma garota chamada Elena Gilbert que se vê envolvida com dois irmãos vampiros, Stefan e Damon Salvatore.</p>
+                    <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                </div>
+                </div>
+            </div>
+            
+    </div>
+    
+    <div class="container-fluid">
+        <div class="card-divider"></div>
+    </div>
+    
+    <section class="sobre mim"> 
+       <div class="foto-perfil"></div>
+          <div><h2>Kaio Eduardo</h2> 
+            <a href="https://wa.me/seunumerodewhatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>+3198899-0511</a>
+                
+          <p>Idade: 19 anos</p>
+          <p> Sobre mim: Sou um estudante da PUCMinas e estou fazendo um site em HTML.Moro em MG e estou aprendendo a tocar bateria.
+          </p>
+        </div>
+      </section>
+      
+      <div class="container-fluid">
+        <div class="cards-divider"></div>
+    </div>
+      
+      <div class="titulos-recko">
+        <h1 class="titulo-com-linha">Séries Favoritas</h1>
+        <div class="linha linha-titulo"></div>
+    </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="On-My-Block-Netflix.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> On My Block</h5>
+                <p class="card-text">Em um bairro marginalizado de Los Angeles, a amizade de quatro adolescentes é testada no início do ensino médio. Eles precisam lidar com os novos desafios que envolvem crescer no local que vivem, os papéis sociais e expectativas impostas.</p>
+                <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col">
+          <div class="card h-100">
+            <img src="kengan-ashura.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> Kengan Ashura</h5>
+              <p class="card-text">Ohma Tokita entra num mundo oculto, em que disputas corporativas são resolvidas através de brutais lutas de gladiadores. Ele não quer dinheiro, somente lutar… e vencer.</p>
+              <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="post_31613.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> Outer Banks</h5>
+              <p class="card-text">A história de Outer Banks gira em torno de uma ilha onde há pobres e ricos, na qual o jovem John B convoca os três melhores amigos para procurarem por um tesouro lendário ligado ao desaparecimento de seu pai.</p>
+              <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="2722043677-two-and-half-men.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> TWO and a half MEN</h5>
+              <p class="card-text">Two and a Half Men conta a história de Charlie, um solteirão boa vida que vê seu dia-a-dia sofrer mudanças drásticas quando seu irmão e sobrinho se mudam para sua casa após o divórcio.</p>
+              <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+            </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100">
+          <img src="Gotham.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> Gotham</h5>
+            <p class="card-text">Gotham foca no passado do comissário Gordon, enquanto ele era ainda um detetive de polícia e estava lidando com diversos personagens que se tornariam, mais tarde, grandes nomes entre vilões e heróis no universo da DC Comics.</p>
+            <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="col">
+        <div class="card h-100">
+          <img src="the-mentalist-television-series-poster-with-simon-baker-e93k825ge5cmxqp9.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-star" style="color: gold;"></i> The Mentalist</h5>
+            <p class="card-text">A série apresenta a vida de Patrick Jane, um consultor independente para a California Bureau of Investigation (CBI), sediada em Sacramento, Califórnia. Ele tem um histórico notável para a resolução de crimes graves, usando suas realmente incríveis habilidades de observação.</p>
+            <a href="serie.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Kaio Eduardo. Todos os direitos reservados.</p>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
